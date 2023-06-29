@@ -26,6 +26,5 @@ public class run {
 		System.out.println(japan.sushi1);
 		System.out.println(japan.sushi2);
 		System.out.println("今の現在日時は" + display + "です");
-
 	}
 }

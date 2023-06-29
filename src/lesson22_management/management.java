@@ -14,6 +14,5 @@ public class management {
 		this.sushi1 = sushi1;
 		this.sushi2 = sushi2;
 		this.dateObj = dateObj;
-		
 	}
 }
