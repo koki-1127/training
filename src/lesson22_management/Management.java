@@ -15,7 +15,6 @@ public class Management {
 	・thisを使って作成してください。
 	・日時は今日の日付を取得してください。
 	*/
-	
 	// それぞれの変数宣言
 	public String helloJpn;
 	public String sushiTasty;
