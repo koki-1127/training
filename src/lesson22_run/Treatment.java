@@ -11,27 +11,27 @@ public class Treatment {
 	public static void main(String[] args) {
 		
 		// 日付データの宣言
-		Date Management_date = new Date();
+		Date ManagementDate = new Date();
 		
 		// 呼び出し（引数へ与えられた値を元に生成）
-		Management japan_contents = new Management("こんにちは！ここは日本です！","この寿司はうまい","寿司は和食です","yyyy/MM/dd HH:mm:ss");
+		Management japanContents = new Management("こんにちは！ここは日本です！","この寿司はうまい","寿司は和食です","yyyy/MM/dd HH:mm:ss");
 		
 		// yyyy-MM-dd H:mm:ss の形式で変数に代入
-		SimpleDateFormat date_format = new SimpleDateFormat(japan_contents.dateObj);
+		SimpleDateFormat dateFormat = new SimpleDateFormat(japanContents.date);
 		
 		// 指定の形式に合わせたデータを変数に代入
-		String display_date = date_format.format(Management_date);
+		String displayDate = dateFormat.format(ManagementDate);
 		
 		// null判定をして出力処理
-		String check_null = null;
+		String checkNull = null;
 		
-		if (Objects.nonNull(japan_contents)) {
-			System.out.println(japan_contents.jpn);
-			System.out.println(japan_contents.sushi1);
-			System.out.println(japan_contents.sushi2);
-			System.out.println("今の現在日時は" + display_date + "です");
+		if (Objects.nonNull(japanContents)) {
+			System.out.println(japanContents.helloJpn);
+			System.out.println(japanContents.sushiTasty);
+			System.out.println(japanContents.sushiJapaneseFood);
+			System.out.println("今の現在日時は" + displayDate + "です");
 		} else {
-			System.out.println(check_null);
+			System.out.println(checkNull);
 		}
 	}
 }
