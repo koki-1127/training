@@ -12,6 +12,7 @@ public class MainCharacterNumber extends MainCharacterBase {
 
     // 引数ありコンストラクタ
     public MainCharacterNumber(String CharacterName) {
+    	
     	// ランダムの宣言
     	Random rnd = new Random();
     	

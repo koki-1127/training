@@ -1,6 +1,7 @@
 package lesson25_CharacterStatus;
 
 public class MainCharacterBase {
+	
     // フィールド
     private String Name;
     private int HP,MP,Atack,Speed,Defense;
