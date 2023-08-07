@@ -13,6 +13,7 @@ public class CharacterOutput {
         // 入力タイミングでコンストラクタの処理の呼び出し
         MainCharacterNumber dev = new MainCharacterNumber(str);
         
+        
         // スーパークラスの画面表示メソッド呼び出し
         dev.introduce();
     }
