@@ -8,6 +8,7 @@ public class MainCharacterNumber extends MainCharacterBase {
 
     // 引数なしコンストラクタ
     public MainCharacterNumber() {
+
     }
 
     // 引数ありコンストラクタ
