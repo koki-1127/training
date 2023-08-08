@@ -1,7 +1,6 @@
 package lesson25_CharacterStatus;
 
 public class MainCharacterBase {
-	
     // フィールド
     private String Name;
     private int HP,MP,Atack,Speed,Defense;
@@ -22,8 +21,8 @@ public class MainCharacterBase {
     
     // 画面表示メソッド
     public void introduce() {
-        System.out.println("こんにちは 「 " + Name + " 」 さん" + "\nステータス" + "\nHP：" + HP + "\nMP：" + MP + 
-        					"\n攻撃力：" + Atack + "\n素早さ：" + Speed + "\n防御力：" + Defense + "\n\nさあ冒険に出かけよう！");
+        System.out.println("こんにちは 「 " + Name + " 」 さん" + "\nステータス" + "\nHP" + HP + "\nMP:" + MP + 
+        					"\n攻撃力:" + Atack + "\n素早さ:" + Speed + "\n防御力:" + Defense + "\n\nさあ冒険に出かけよう!");
     }
     
     // getter setter
@@ -62,5 +61,12 @@ public class MainCharacterBase {
     }
     public void setDefense(int Defense) {
         this.Defense = Defense;
+    }
+ 
+    @Override
+    public String toString() {
+      return "HP:" + this.HP + "\nMP:" + this.MP + 
+      "\n攻撃力:" + this.Atack + "\n素早さ:" + this.Speed + 
+      "\n防御力:" + this.Defense + "\n\nさあ冒険に出かけよう!";
     }
 }

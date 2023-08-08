@@ -2,6 +2,8 @@ package lesson25_CharacterOutput;
 
 import java.util.Scanner;
 
+import lesson25_CharacterStatus.MainCharacterNumber;
+
 public class CharacterOutput {
 
 	public static void main(String[] args) {
@@ -17,5 +19,8 @@ public class CharacterOutput {
 
 		// スーパークラスの画面表示メソッド呼び出し
 		dev.introduce();
+		
+		// Scannerのclose
+		scan.close();
 	}
 }
