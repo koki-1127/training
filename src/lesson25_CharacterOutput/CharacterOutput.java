@@ -19,7 +19,7 @@ public class CharacterOutput {
 
 		// スーパークラスの画面表示メソッド呼び出し
 		System.out.println(dev);
-		
+
 		// Scannerのclose
 		scan.close();
 	}
