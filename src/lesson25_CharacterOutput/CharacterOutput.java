@@ -18,7 +18,7 @@ public class CharacterOutput {
 		MainCharacterNumber dev = new MainCharacterNumber(str);
 
 		// スーパークラスの画面表示メソッド呼び出し
-		dev.introduce();
+		System.out.println(dev);
 		
 		// Scannerのclose
 		scan.close();
