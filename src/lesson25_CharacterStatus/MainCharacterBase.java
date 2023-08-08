@@ -19,12 +19,6 @@ public class MainCharacterBase {
         this.Defense = Defense;
     }
     
-    // 画面表示メソッド
-    public void introduce() {
-        System.out.println("こんにちは 「 " + Name + " 」 さん" + "\nステータス" + "\nHP" + HP + "\nMP:" + MP + 
-        					"\n攻撃力:" + Atack + "\n素早さ:" + Speed + "\n防御力:" + Defense + "\n\nさあ冒険に出かけよう!");
-    }
-    
     // getter setter
     public String getName() {
         return Name;
