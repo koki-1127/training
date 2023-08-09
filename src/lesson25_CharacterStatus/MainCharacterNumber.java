@@ -5,7 +5,6 @@ import java.util.Random;
 public class MainCharacterNumber extends MainCharacterBase {
 
 	// フィールド
-	private String Name;
 
 	// 引数なしコンストラクタ
 	public MainCharacterNumber() {
@@ -28,7 +27,7 @@ public class MainCharacterNumber extends MainCharacterBase {
 
 	@Override
 	public String toString() {
-		return "こんにちは 「" + this.Name + "」 さん\nステータス\n" +
+		return "こんにちは 「 " + this.getName() + " 」 さん\nステータス\n" +
 				super.toString();
 	}
 }

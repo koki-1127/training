@@ -2,8 +2,8 @@ package lesson25_CharacterStatus;
 
 public class MainCharacterBase {
 	// フィールド
-	private String Name;
-	private int HP,MP,Atack,Speed,Defense;
+	private String name;
+	private int hp,mp,atack,speed,defense;
 
 	// 引数なしコンストラクタ
 	public MainCharacterBase() {
@@ -11,56 +11,56 @@ public class MainCharacterBase {
 
 	// 引数ありコンストラクタ
 	public MainCharacterBase(String Name,int HP,int MP,int Atack,int Speed,int Defense) {
-		this.Name = Name;
-		this.HP = HP;
-		this.MP = MP;
-		this.Atack = Atack;
-		this.Speed = Speed;
-		this.Defense = Defense;
+		this.name = Name;
+		this.hp = HP;
+		this.mp = MP;
+		this.atack = Atack;
+		this.speed = Speed;
+		this.defense = Defense;
 	}
 
 	// getter setter
 	public String getName() {
-		return Name;
+		return name;
 	}
 	public void setName(String Name) {
-		this.Name = Name;
+		this.name = Name;
 	}
 	public int getHP() {
-		return HP;
+		return hp;
 	}
 	public void setHP(int HP) {
-		this.HP = HP;
+		this.hp = HP;
 	}
 	public int getMP() {
-		return MP;
+		return mp;
 	}
 	public void setMP(int MP) {
-		this.MP = MP;
+		this.mp = MP;
 	}
 	public int getAtack() {
-		return Atack;
+		return atack;
 	}
 	public void setAtack(int Atack) {
-		this.Atack = Atack;
+		this.atack = Atack;
 	}
 	public int getSpeed() {
-		return Speed;
+		return speed;
 	}
 	public void setSpeed(int Speed) {
-		this.Speed = Speed;
+		this.speed = Speed;
 	}
 	public int getDefense() {
-		return Defense;
+		return defense;
 	}
 	public void setDefense(int Defense) {
-		this.Defense = Defense;
+		this.defense = Defense;
 	}
 
 	@Override
 	public String toString() {
-		return "HP:" + this.HP + "\nMP:" + this.MP + 
-				"\n攻撃力:" + this.Atack + "\n素早さ:" + this.Speed + 
-				"\n防御力:" + this.Defense + "\n\nさあ冒険に出かけよう!";
+		return "HP:" + this.hp + "\nMP:" + this.mp + 
+				"\n攻撃力:" + this.atack + "\n素早さ:" + this.speed + 
+				"\n防御力:" + this.defense + "\n\nさあ冒険に出かけよう!";
 	}
 }
