@@ -27,23 +27,32 @@ public class PrefectureSorter {
 		prefectures.add(new Prefecture("群馬県","前橋市",6362));
 		prefectures.add(new Prefecture("埼玉県","さいたま市",3798));
 
-		// 入力の受け取り
+		// メッセージ表示
+		System.out.println("0～10の数字をカンマ区切りで入力して下さい");
+
+		// 出力する数字入力の受け取り
 		String userInput = scanner.nextLine();
 
-		// カンマで区切った文言の受け取り
+		// メッセージ表示
+		System.out.println("昇順,降順どちらにしますか\n昇順なら0、降順なら1を入力してください");
+
+		// 昇順か降順を決める入力の受け取り
+		String sortOrder = scanner.nextLine();
+
+		// カンマで区切った入力の受け取り
 		String[] inputValues = userInput.split(",");
 
 		// 入力した数字の文言をリストに格納
-		List<Integer> InputIntegers = new ArrayList<>();
+		List<Integer> indices = new ArrayList<>();
 
 		// 入力リスト分for文を回す
-		for (String inputValue : inputValues) {
+		for (String trimmedValue : inputValues) {
 
 			// 空でないか値をチェック
-			if (!inputValue.isEmpty()) {
+			if (!trimmedValue.isEmpty()) {
 
 				// 整数の場合入力された分のリストを生成
-				InputIntegers.add(Integer.parseInt(inputValue));
+				indices.add(Integer.parseInt(trimmedValue));
 			}
 			// 入力が空の場合、nullの出力
 			else {
@@ -54,13 +63,22 @@ public class PrefectureSorter {
 		// スキャナーを閉じる
 		scanner.close();
 
-		// 昇順に並び替えする
-		Collections.sort(InputIntegers);
+		// ユーザーの選択に基づいて並び替えする
+		if ("0".equalsIgnoreCase(sortOrder)) {
+
+			// 昇順に並べ替え
+			Collections.sort(indices);
+		}
+		
+		// 降順に並べ替え
+		else {
+			Collections.sort(indices, Collections.reverseOrder());
+		}
 
 		// 並び替えた順に都道府県を出力する
-		for (int index : InputIntegers) {
+		for (int index : indices) {
 
-			//　リストの数分、条件を回す
+			// リストの数分、条件を回す
 			if (index < prefectures.size()) {
 
 				// indexを変数に格納
